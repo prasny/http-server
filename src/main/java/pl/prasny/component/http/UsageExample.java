@@ -1,9 +1,14 @@
- Implementacja serwera HTTP IHttpPort oparta na bibliotece java.net
- 
- Przykład użycia:
- 
- <pre>
-public class Main {
+package pl.prasny.component.http;
+
+import pl.prasny.api.http.IHttpPort;
+import pl.prasny.api.http.IHttpPortHandler;
+import pl.prasny.api.http.IRequest;
+import pl.prasny.api.http.IResponse;
+import pl.prasny.api.http.response.Response;
+import pl.prasny.component.http.route.Route;
+import pl.prasny.component.http.server.PlainJavaHttp;
+
+public class UsageExample {
     public static void main(String[] args) throws Throwable {
         //ENDPOINTS
         String endpoint = "/endpoint/one";
@@ -25,4 +30,3 @@ class InfoHandler implements IHttpPortHandler {
         return new Response("InfoHandler");
     }
 }
- </pre>

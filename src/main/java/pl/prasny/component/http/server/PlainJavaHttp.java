@@ -12,11 +12,6 @@ import java.io.IOException;
 import java.net.BindException;
 import java.net.InetSocketAddress;
 
-
-
-
-
-
 public class PlainJavaHttp extends AbstractHttpPort implements IHttpPort {
     private HttpServer server;
     final private Logger LOGGER = LoggerFactory.getLogger(PlainJavaHttp.class);
